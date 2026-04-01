@@ -22,15 +22,15 @@ logging.basicConfig(
 
 
 
-Backtest Results:
-MAPE: 10.35%
-RMSE: 6.34
-MAE: 5.69
+# Backtest Results:
+# MAPE: 10.35%
+# RMSE: 6.34
+# MAE: 5.69
 
-Backtest Results:
-MAPE: 10.35%
-RMSE: 6.34
-MAE: 5.69
+# Backtest Results:
+# MAPE: 10.35%
+# RMSE: 6.34
+# MAE: 5.69
 
 
 np.random.seed(42)
