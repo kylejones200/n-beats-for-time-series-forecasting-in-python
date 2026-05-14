@@ -9,6 +9,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import TimeSeriesSplit
+import signalplot
 import logging
 import matplotlib.pyplot as plt
 import numpy as np
@@ -34,11 +35,8 @@ logging.basicConfig(
 
 
 np.random.seed(42)
-plt.rcParams.update({
-    'axes.grid': False,'font.family': 'serif','axes.spines.top': False,'axes.spines.right': False,'axes.linewidth': 0.8})
+signalplot.apply(font_family='serif')
 
-def save_fig(path: str):
-    plt.tight_layout(); plt.savefig(path, bbox_inches='tight'); plt.close()
 
 @dataclass
 class Config:
@@ -106,7 +104,7 @@ def main(plot: bool = False):
         if y_pred is not None:
             y_pred.plot(label='N-BEATS last fold')
         plt.legend()
-        save_fig('eia_nbeats_last_fold.png')
+        signalplot.save('eia_nbeats_last_fold.png')
 
 if __name__ == '__main__':
     main()
