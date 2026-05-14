@@ -87,7 +87,7 @@ def rolling_origin_nbeats(ts: TimeSeries, cfg: Config):
         model.fit(y_tr)
         fc = model.predict(len(y_te))
         mae = mean_absolute_error(y_te.values().ravel(), fc.values().ravel())
-        maes.append(mae)
+        pd.concat([maes, mae])
         last_true, last_pred = y_te, fc
     return float(np.mean(maes)), (last_true, last_pred)
 
