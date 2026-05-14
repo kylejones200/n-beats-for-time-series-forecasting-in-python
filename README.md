@@ -1,7 +1,7 @@
 # N BEATS for Time Series Forecasting in Python
 
-**Published:** 2025-01-08
-**Medium:** [https://medium.com/@kyle-t-jones/n-beats-for-time-series-forecasting-in-python-b4a61858fe49](https://medium.com/@kyle-t-jones/n-beats-for-time-series-forecasting-in-python-b4a61858fe49)
+Published: 2025-01-08
+Medium: [https://medium.com/@kyle-t-jones/n-beats-for-time-series-forecasting-in-python-b4a61858fe49](https://medium.com/@kyle-t-jones/n-beats-for-time-series-forecasting-in-python-b4a61858fe49)
 
 ## About
 
