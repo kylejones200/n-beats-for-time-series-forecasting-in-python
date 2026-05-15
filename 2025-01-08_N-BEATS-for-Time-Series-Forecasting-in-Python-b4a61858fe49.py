@@ -34,7 +34,6 @@ logging.basicConfig(
 # MAE: 5.69
 
 
-np.random.seed(42)
 signalplot.apply(font_family='serif')
 
 
@@ -93,6 +92,7 @@ def rolling_origin_nbeats(ts: TimeSeries, cfg: Config):
 
 
 def main(plot: bool = False):
+    np.random.seed(42)
     cfg = Config()
     ts = load_series(cfg)
     mean_mae, (y_true, y_pred) = rolling_origin_nbeats(ts, cfg)
