@@ -1,6 +1,5 @@
 # Description: Short example for N BEATS for Time Series Forecasting in Python.
 
-
 import logging
 from dataclasses import dataclass
 from pathlib import Path
@@ -21,7 +20,6 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
 )
 
-
 # Backtest Results:
 # MAPE: 10.35%
 # RMSE: 6.34
@@ -31,7 +29,6 @@ logging.basicConfig(
 # MAPE: 10.35%
 # RMSE: 6.34
 # MAE: 5.69
-
 
 signalplot.apply(font_family="serif")
 
@@ -100,7 +97,6 @@ def main(plot: bool = False):
     ts = load_series(cfg)
     mean_mae, (y_true, y_pred) = rolling_origin_nbeats(ts, cfg)
     logger.info(f"N-BEATS mean MAE: {mean_mae}")
-
     if plot:
         plt.figure(figsize=(9, 4))
         ts.plot(label="history", alpha=0.6)
