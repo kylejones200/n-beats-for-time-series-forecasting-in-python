@@ -11,14 +11,7 @@ N-BEATS (Neural Basis Expansion Analysis for Time Series) is a deep learning mod
 
 N-BEATS can capture patterns in time series data without needing prior training. This makes it a good choice for datasets where the underlying dynamics are not known or are too complicated for simpler models to grasp (looking at you ARIMA).
 
-## About
 
-Place the code for this article in this repository.
-The original article export is saved as `article.md`.
-
-## Files
-
-Add your `.ipynb`, `.py`, `.yaml`, `.js`, `.ts`, or other project files here.
 
 ## Disclaimer
 
